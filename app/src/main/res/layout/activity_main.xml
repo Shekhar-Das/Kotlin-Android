@@ -34,4 +34,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/EdMessage" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/btnShareToOtherApps"
+        android:hint="Share Message to others apps "
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnSendMessagetoSecondActivity" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
