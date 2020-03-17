@@ -1,5 +1,6 @@
 package com.das.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,6 +16,14 @@ class MainActivity : AppCompatActivity() {
         btnToast.setOnClickListener {
             Toast.makeText(this,"Button was clicked",Toast.LENGTH_SHORT).show()
             Log.i("MainActivity " ,"Button Clicked")
+        }
+
+        btnSendMessagetoSecondActivity.setOnClickListener {
+            val message : String = EdMessage.text.toString()
+            Toast.makeText(this , message , Toast.LENGTH_SHORT).show()
+            val intent = Intent(this , SecondActivity::class.java)
+            startActivity(intent)
+
         }
     }
 }
